@@ -12,7 +12,7 @@ pipeline{
             steps{
             echo 'pulling ...';
             git branch: 'main',
-            url : 'https://github.com/atefmiladi/Angular-Jenkins-pipeline.git'
+            url : 'https://github.com/atefmiladi/Angular-jenkins.git'
             }
         }
       
