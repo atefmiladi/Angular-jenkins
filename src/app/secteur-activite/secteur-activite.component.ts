@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SecteurActiviteService } from '../services/secteur-activite.service';
 
 @Component({
   selector: 'app-secteur-activite',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecteurActiviteComponent implements OnInit {
 
-  constructor() { }
+  
+  list : any = [];
+  
+
+  constructor(private secteurActiviteService:SecteurActiviteService) { }
+
 
   ngOnInit(): void {
+    
+    this.secteurActiviteService.getAllSecteurActivite().subscribe( res => this.list = res );
   }
 
 }
