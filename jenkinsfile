@@ -55,7 +55,7 @@ pipeline{
              }
        } 
 
-       stage("Slack Notification"){
+      /* stage("Slack Notification"){
             
             steps{
                 
@@ -63,11 +63,11 @@ pipeline{
                 
             }
         
-        }
+        }*/
    
     }
 
-     post{
+    /* post{
         success{
             
               slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'everything', message: 'Validation - Build - Success', tokenCredentialId: 'SlackId', username: 'jenkins-bot'
@@ -78,6 +78,6 @@ pipeline{
               slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'everything', message: 'Validation - Buid - Failed', tokenCredentialId: 'SlackId', username: 'jenkins-bot'
            
         }
-    }
+    }*/
    
 }
