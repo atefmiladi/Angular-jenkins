@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'http://localhost:8089'
+  apiBaseUrl: 'http://vps-a133f95c.vps.ovh.net:8089'
 };
 
 /*
