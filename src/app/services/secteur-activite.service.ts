@@ -13,9 +13,9 @@ export class SecteurActiviteService {
 
   private apiServerUrl = environment.apiBaseUrl;
 
-  createSecteurActivite() { 
+  createSecteurActivite(data:any) { 
 
-    return this.http.get(`${this.apiServerUrl}/SpringMVC/secteurActivite/retrieve-all-secteurActivite`);
+    return this.http.post(`${this.apiServerUrl}/SpringMVC/secteurActivite/add-secteurActivite`, data);
   
   }
 

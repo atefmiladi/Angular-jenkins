@@ -8,12 +8,21 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import { SecteurActiviteComponent } from './secteur-activite/secteur-activite.component';
 import { HttpClientModule } from '@angular/common/http';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatCardModule} from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { AddSecteurComponent } from './add-secteur/add-secteur.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SecteurActiviteComponent
+    SecteurActiviteComponent,
+    AddSecteurComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +30,13 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
+    MatCardModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

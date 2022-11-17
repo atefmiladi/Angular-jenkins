@@ -1,0 +1,41 @@
+mat-card{
+
+
+    display: flex;
+ 
+    flex-direction: column;
+ 
+    width: 400px;
+ 
+    margin-top: 15px;
+ 
+ 
+ 
+ }
+ 
+ 
+ form{
+ 
+     display: flex;
+ 
+     flex-direction: column;
+
+ }
+
+ form input{
+
+  width: 350px;
+  height: 20px;
+
+ }
+ 
+ 
+ mat-card button{    
+ 
+ 
+     margin-top: 20px;
+ 
+     width: 100px;
+ 
+ 
+ }
