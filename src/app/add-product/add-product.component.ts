@@ -16,8 +16,11 @@ export class AddProductComponent implements OnInit {
   ngOnInit(): void {
 
     this.productForm = new FormGroup({
-      codeSecteurActivite: new FormControl(''),
-      libelleSecteurActivite: new FormControl(''),
+      codeProduit: new FormControl(''),
+      libelleProduit: new FormControl(''),
+      prix: new FormControl(''),
+      dateCreation: new FormControl(''),
+      dateDerniereModification: new FormControl(''),
       
     });
   }

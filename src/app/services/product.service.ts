@@ -14,14 +14,14 @@ export class ProductService {
 
   createProduct(data:any) { 
 
-    return this.http.post(`${this.apiServerUrl}/SpringMVC/secteurActivite/add-secteurActivite`, data);
+    return this.http.post(`${this.apiServerUrl}/SpringMVC/produit/add-produit`, data);
   
   }
 
 
  getAllProducts() {  
 
-  return this.http.get(`${this.apiServerUrl}/SpringMVC/secteurActivite/retrieve-all-secteurActivite`);
+  return this.http.get(`${this.apiServerUrl}/SpringMVC/produit/retrieve-all-produits`);
 
      }
 

@@ -12,6 +12,7 @@
         <th>Id</th>    
         <th>Code</th>
         <th>Libel</th>
+        <th>Prix</th>
         <th>Creation date</th>
         <th>Expiration date</th>
         <th>Details</th>
@@ -21,15 +22,16 @@
     </thead>
     <tbody>
 
-        <tr  *ngFor="let secteur of list | paginate :{id:'listing_pagination',
+        <tr  *ngFor="let product of list | paginate :{id:'listing_pagination',
         itemsPerPage:7,
         currentPage:page}">
 
-            <td><span>{{secteur.codeSecteurActivite}}</span></td>
-            <td><span>{{secteur.libelleSecteurActivite}}</span></td>
-            <td><span>{{secteur.codeSecteurActivite}}</span></td>
-            <td><span>{{secteur.libelleSecteurActivite}}</span></td>
-            <td><span>{{secteur.libelleSecteurActivite}}</span></td>
+            <td><span>{{product.idProduit}}</span></td>
+            <td><span>{{product.codeProduit}}</span></td>
+            <td><span>{{product.libelleProduit}}</span></td>
+            <td><span>{{product.prix}}</span></td>
+            <td><span>{{product.dateCreation}}</span></td>
+            <td><span>{{product.dateDerniereModification}}</span></td>
             <td><button mat-raised-button color="primary" >Details</button></td>
             <td><button mat-raised-button color="primary" >Update</button></td>
             <td><button mat-raised-button color="primary" >Delete</button></td>
