@@ -5,26 +5,24 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class SecteurActiviteService {
-
+export class ProductService {
 
 
   constructor(private http:HttpClient) { }
 
   private apiServerUrl = environment.apiBaseUrl;
 
-  createSecteurActivite(data:any) { 
+  createProduct(data:any) { 
 
     return this.http.post(`${this.apiServerUrl}/SpringMVC/secteurActivite/add-secteurActivite`, data);
   
   }
 
 
- getAllSecteurActivite() {  
+ getAllProducts() {  
 
   return this.http.get(`${this.apiServerUrl}/SpringMVC/secteurActivite/retrieve-all-secteurActivite`);
 
      }
-
 
 }

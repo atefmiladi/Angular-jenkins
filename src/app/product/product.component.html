@@ -9,8 +9,11 @@
 <table  class="table table-striped table-bordered">
     <thead>
         <tr>
+        <th>Id</th>    
         <th>Code</th>
         <th>Libel</th>
+        <th>Creation date</th>
+        <th>Expiration date</th>
         <th>Details</th>
         <th>Update</th>
         <th>Delete</th>
@@ -18,12 +21,15 @@
     </thead>
     <tbody>
 
-        <tr  *ngFor="let secteur of list">
+        <tr  *ngFor="let secteur of list | paginate :{id:'listing_pagination',
+        itemsPerPage:7,
+        currentPage:page}">
 
             <td><span>{{secteur.codeSecteurActivite}}</span></td>
-        
             <td><span>{{secteur.libelleSecteurActivite}}</span></td>
-             
+            <td><span>{{secteur.codeSecteurActivite}}</span></td>
+            <td><span>{{secteur.libelleSecteurActivite}}</span></td>
+            <td><span>{{secteur.libelleSecteurActivite}}</span></td>
             <td><button mat-raised-button color="primary" >Details</button></td>
             <td><button mat-raised-button color="primary" >Update</button></td>
             <td><button mat-raised-button color="primary" >Delete</button></td>
@@ -32,4 +38,13 @@
     </tbody>
 </table>
 
+
+<div class="pagination_container">
+
+    <pagination-controls id ='listing_pagination' (pageChange)="page = $event" ></pagination-controls>
+    
+    </div>
+    
+
 </div>
+

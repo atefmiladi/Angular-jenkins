@@ -14,7 +14,12 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import {NgxPaginationModule} from 'ngx-pagination';
 import { AddSecteurComponent } from './add-secteur/add-secteur.component';
+import { ProductComponent } from './product/product.component';
+import { AddProductComponent } from './add-product/add-product.component';
 
 
 @NgModule({
@@ -22,7 +27,9 @@ import { AddSecteurComponent } from './add-secteur/add-secteur.component';
     AppComponent,
     NavbarComponent,
     SecteurActiviteComponent,
-    AddSecteurComponent
+    AddSecteurComponent,
+    ProductComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +43,10 @@ import { AddSecteurComponent } from './add-secteur/add-secteur.component';
     ReactiveFormsModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

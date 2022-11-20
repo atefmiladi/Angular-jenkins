@@ -22,9 +22,7 @@ export class AddSecteurComponent implements OnInit {
   }
 
   addSecteur(){
-
     this.secteurActiviteService.createSecteurActivite(this.secteurForm.value).subscribe(res => console.log(res));
-
   }
 
 

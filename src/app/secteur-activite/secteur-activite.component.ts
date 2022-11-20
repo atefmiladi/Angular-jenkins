@@ -12,22 +12,17 @@ export class SecteurActiviteComponent implements OnInit {
 
   
   list : any = [];
-  
 
   constructor(private secteurActiviteService:SecteurActiviteService,private dialogRef:MatDialog) { }
 
 
-  ngOnInit(): void {
-    
+  ngOnInit(): void { 
     this.secteurActiviteService.getAllSecteurActivite().subscribe( res => this.list = res );
   }
 
 
   openDialog(){
-
    this.dialogRef.open(AddSecteurComponent);
-
-
   }
 
 }
