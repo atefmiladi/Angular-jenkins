@@ -1,11 +1,7 @@
-<body>
+<h1 mat-dialog-title>Add Product</h1>
 
-    <mat-card >
-    
-        <mat-card-content >
-      
-          <h1>Add Product</h1>
-        
+<div mat-dialog-content class="dialog-content">
+
         <form [formGroup]="productForm" (ngSubmit)="addProduct()" >
         
           <mat-form-field appearance="outline">
@@ -59,10 +55,5 @@
         <button mat-raised-button color="primary" type="submit" >Add</button>
     
         </form>
-        
-        </mat-card-content>
-        
-      </mat-card>
-    
-</body>
-
+      
+</div>
